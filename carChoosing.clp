@@ -15,34 +15,34 @@
    ?answer)
 
 (deffunction ask-about-price()
-	(bind ?answer (ask-question "Выберите ценовой диапазон. 1: до 1 млн.; 2: от 1 до 3 млн.; 3: больше 3 млн.: " 1 2 3))
+	(bind ?answer (ask-question "Р’С‹Р±РµСЂРёС‚Рµ С†РµРЅРѕРІРѕР№ РґРёР°РїР°Р·РѕРЅ. 1: РґРѕ 1 РјР»РЅ.; 2: РѕС‚ 1 РґРѕ 3 РјР»РЅ.; 3: Р±РѕР»СЊС€Рµ 3 РјР»РЅ.: " 1 2 3))
 	?answer
 )
 
 (deffunction ask-about-seats(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите предпочитаемое количество мест. " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Р’С‹Р±РµСЂРёС‚Рµ РїСЂРµРґРїРѕС‡РёС‚Р°РµРјРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјРµСЃС‚. " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question ?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-speed()
-	(bind ?answer (ask-question "Любите ли вы быструю езду? 1:да; 2:нет: " 1 2))
+	(bind ?answer (ask-question "Р›СЋР±РёС‚Рµ Р»Рё РІС‹ Р±С‹СЃС‚СЂСѓСЋ РµР·РґСѓ? 1:РґР°; 2:РЅРµС‚: " 1 2))
 )
 
 (deffunction ask-about-landskape(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите местность, по которой планируете перемещаться на своём автомобиле. " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Р’С‹Р±РµСЂРёС‚Рµ РјРµСЃС‚РЅРѕСЃС‚СЊ, РїРѕ РєРѕС‚РѕСЂРѕР№ РїР»Р°РЅРёСЂСѓРµС‚Рµ РїРµСЂРµРјРµС‰Р°С‚СЊСЃСЏ РЅР° СЃРІРѕС‘Рј Р°РІС‚РѕРјРѕР±РёР»Рµ. " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-landskape-priority(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите местность, которой будете отдавать приоритет " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Р’С‹Р±РµСЂРёС‚Рµ РјРµСЃС‚РЅРѕСЃС‚СЊ, РєРѕС‚РѕСЂРѕР№ Р±СѓРґРµС‚Рµ РѕС‚РґР°РІР°С‚СЊ РїСЂРёРѕСЂРёС‚РµС‚ " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-carcase(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите тип кузова " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Р’С‹Р±РµСЂРёС‚Рµ С‚РёРї РєСѓР·РѕРІР° " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
@@ -61,7 +61,7 @@
 	(price 1)
 	(not (seats ?))
 	=>
-	(assert (seats (ask-about-seats "2 или 5" 2 5)))
+	(assert (seats (ask-about-seats "2 РёР»Рё 5" 2 5)))
 )
 
 (defrule determine-speed1 ""
@@ -76,7 +76,7 @@
 	(price 2)
 	(not (seats ?))
 	=>
-	(assert (seats (ask-about-seats "5 или 8" 5 8)))
+	(assert (seats (ask-about-seats "5 РёР»Рё 8" 5 8)))
 )
 
 (defrule determine-speed2 ""
@@ -93,7 +93,7 @@
 	(speed 1)
 	(not (landskape ?))
 	=>
-	(assert (landskape (ask-about-landskape "1: внедорожье; 2: город и внедорожье:" 1 2)))
+	(assert (landskape (ask-about-landskape "1: РІРЅРµРґРѕСЂРѕР¶СЊРµ; 2: РіРѕСЂРѕРґ Рё РІРЅРµРґРѕСЂРѕР¶СЊРµ:" 1 2)))
 )
 
 (defrule determine-landskape-priority1 ""
@@ -103,7 +103,7 @@
 	(landskape 2)
 	(not (landskape-priority ?))
 	=>
-	(assert (landskape-priority (ask-about-landskape-priority "1: город, 2: внедорожье" 1 2)))
+	(assert (landskape-priority (ask-about-landskape-priority "1: РіРѕСЂРѕРґ, 2: РІРЅРµРґРѕСЂРѕР¶СЊРµ" 1 2)))
 )
 
 (defrule determine-speed3 ""
@@ -120,14 +120,14 @@
 	(speed 1)
 	(not (landskape ?))
 	=>
-	(assert (landskape (ask-about-landskape "1: город; 2: город и внедорожье:" 1 2)))
+	(assert (landskape (ask-about-landskape "1: РіРѕСЂРѕРґ; 2: РіРѕСЂРѕРґ Рё РІРЅРµРґРѕСЂРѕР¶СЊРµ:" 1 2)))
 )
 
 (defrule determine-seats3 ""
 	(price 3)
 	(not (seats ?))
 	=>
-	(assert (seats (ask-about-seats "2 или 5 или 8" 2 5 8)))
+	(assert (seats (ask-about-seats "2 РёР»Рё 5 РёР»Рё 8" 2 5 8)))
 )
 
 (defrule determine-carcase1 ""
@@ -135,7 +135,7 @@
 	(seats 2)
 	(not (carcase ?))
 	=>
-	(assert (carcase (ask-about-carcase "1: кабриолет; 2: купе" 1 2)))
+	(assert (carcase (ask-about-carcase "1: РєР°Р±СЂРёРѕР»РµС‚; 2: РєСѓРїРµ" 1 2)))
 )
 
 (defrule determine-speed4 ""
@@ -160,7 +160,7 @@
 	(speed 2)
 	(not (landskape ?))
 	=>
-	(assert (landskape (ask-about-landskape "1: город; 2: внедорожье:" 1 2)))
+	(assert (landskape (ask-about-landskape "1: РіРѕСЂРѕРґ; 2: РІРЅРµРґРѕСЂРѕР¶СЊРµ:" 1 2)))
 )
 
 ;;;****************
@@ -187,7 +187,7 @@
 	(price 1)
 	(seats 5)
 	=>
-	(assert (car "УАЗ Патриот"))
+	(assert (car "РЈРђР— РџР°С‚СЂРёРѕС‚"))
 )
 
 (defrule audi-a6 ""
@@ -320,7 +320,7 @@
   (car ?item)
   =>
   (printout t crlf crlf)
-  (printout t "Вам подходит автомобиль:")
+  (printout t "Р’Р°Рј РїРѕРґС…РѕРґРёС‚ Р°РІС‚РѕРјРѕР±РёР»СЊ:")
   (printout t crlf crlf)
   (printout t ?item crlf crlf)
   )
