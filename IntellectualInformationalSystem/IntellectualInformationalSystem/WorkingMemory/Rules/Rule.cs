@@ -1,4 +1,5 @@
 ﻿using IntellectualInformationalSystem.IteratorPatternFiles;
+using IntellectualInformationalSystem.WorkingMemory.Facts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,7 +51,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        internal IIteratorAggregate AllowedValuesIterAggr
+        private IIteratorAggregate AllowedValuesIterAggr
         {
             get
             {
@@ -63,7 +64,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        internal IIterator _allowedValuesIter
+        private IIterator _allowedValuesIter
         {
             get
             {

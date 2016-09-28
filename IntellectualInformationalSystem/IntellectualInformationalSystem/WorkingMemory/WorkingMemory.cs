@@ -18,7 +18,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        internal IIterator _rulesIterator
+        private IIterator _rulesIterator
         {
             get
             {
@@ -31,7 +31,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        internal IIteratorAggregate RulesIterAggr
+        private IIteratorAggregate RulesIterAggr
         {
             get
             {

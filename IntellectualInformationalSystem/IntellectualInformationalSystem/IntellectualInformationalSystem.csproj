@@ -55,6 +55,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="IteratorPatternFiles\IIterator.cs" />
+    <Compile Include="WorkingMemory\Facts\LogicalSign.cs" />
     <Compile Include="WorkingMemory\Facts\Condition.cs" />
     <Compile Include="WorkingMemory\Rules\AllowedValuesAggr.cs" />
     <Compile Include="WorkingMemory\Rules\AllowedValuesContainer.cs" />
