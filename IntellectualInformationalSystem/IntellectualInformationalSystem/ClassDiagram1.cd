@@ -28,7 +28,7 @@
       <FileName>WorkingMemory\AllowedValuesContainer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="IntellectualInformationalSystem.LogicalOutputMechanism.Iterator" Collapsed="true">
+  <Interface Name="IntellectualInformationalSystem.LogicalOutputMechanism.Iterator">
     <Position X="1.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
