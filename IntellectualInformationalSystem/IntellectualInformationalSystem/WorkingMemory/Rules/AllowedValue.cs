@@ -6,21 +6,25 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class Rule
+    class AllowedValue
     {
-        private int _name;
+        private int _id;
+        private int _text;
 
-        public int Name
+        public int Id
         {
             get
             {
-                return _name;
+                return _id;
             }
         }
 
-        public AllowedValue GetAllowedRule(int index)
+        public int Text
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                return _text;
+            }
         }
     }
 }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.LogicalOutputMechanism
+namespace IntellectualInformationalSystem.IteratorPatternFiles
 {
-    interface Iterator
+    interface IIteratorAggregate
     {
+        IIterator CreateIterator();
     }
 }

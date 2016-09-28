@@ -54,10 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="LogicalOutputMechanism\Iterator.cs" />
-    <Compile Include="WorkingMemory\AllowedValuesContainer.cs" />
-    <Compile Include="WorkingMemory\AllowedValue.cs" />
-    <Compile Include="WorkingMemory\Rule.cs" />
+    <Compile Include="IteratorPatternFiles\IIterator.cs" />
+    <Compile Include="WorkingMemory\Facts\Condition.cs" />
+    <Compile Include="WorkingMemory\Rules\AllowedValuesAggr.cs" />
+    <Compile Include="WorkingMemory\Rules\AllowedValuesContainer.cs" />
+    <Compile Include="WorkingMemory\Rules\AllowedValue.cs" />
+    <Compile Include="IteratorPatternFiles\IIteratorAggregate.cs" />
+    <Compile Include="WorkingMemory\Rules\AllowedValuesIter.cs" />
+    <Compile Include="WorkingMemory\Rules\Rule.cs" />
     <Compile Include="WorkingMemory\WorkingMemory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -90,7 +94,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="WorkingMemory\ClassDiagrams\WmAndRules.cd" />
+    <None Include="WorkingMemory\ClassDiagrams\WmAndFacts.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +105,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
