@@ -54,16 +54,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="IteratorPatternFiles\IIterator.cs" />
+    <Compile Include="LogicalOutputMechanism\LogicalOutputMechanism.cs" />
+    <Compile Include="WorkingMemory\Facts\Action.cs" />
+    <Compile Include="WorkingMemory\Rules\ElementGetter.cs" />
+    <Compile Include="WorkingMemory\Facts\Fact.cs" />
+    <Compile Include="WorkingMemory\Facts\IIterator.cs" />
+    <Compile Include="WorkingMemory\Facts\ConcreteValueForRule.cs" />
+    <Compile Include="WorkingMemory\Facts\QuestionForRule.cs" />
     <Compile Include="WorkingMemory\Facts\LogicalSign.cs" />
     <Compile Include="WorkingMemory\Facts\Condition.cs" />
-    <Compile Include="WorkingMemory\Rules\AllowedValuesAggr.cs" />
-    <Compile Include="WorkingMemory\Rules\AllowedValuesContainer.cs" />
     <Compile Include="WorkingMemory\Rules\AllowedValue.cs" />
-    <Compile Include="IteratorPatternFiles\IIteratorAggregate.cs" />
-    <Compile Include="WorkingMemory\Rules\AllowedValuesIter.cs" />
     <Compile Include="WorkingMemory\Rules\Rule.cs" />
-    <Compile Include="WorkingMemory\WorkingMemory.cs" />
+    <Compile Include="WorkingMemory\Rules\WorkingMemory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -95,8 +97,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="WorkingMemory\ClassDiagrams\WmAndRules.cd" />
-    <None Include="WorkingMemory\ClassDiagrams\WmAndFacts.cd" />
+    <None Include="WorkingMemory\ClassDiagrams\ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

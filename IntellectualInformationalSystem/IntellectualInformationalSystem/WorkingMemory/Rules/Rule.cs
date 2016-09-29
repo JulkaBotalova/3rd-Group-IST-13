@@ -1,5 +1,4 @@
-﻿using IntellectualInformationalSystem.IteratorPatternFiles;
-using IntellectualInformationalSystem.WorkingMemory.Facts;
+﻿using IntellectualInformationalSystem.WorkingMemory.Facts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,14 +34,6 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        public int AllowedValuesIter
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
         public bool IsNot
         {
             get
@@ -51,27 +42,9 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        private IIteratorAggregate AllowedValuesIterAggr
+        public ElementGetter<AllowedValue> AllowedValues
         {
             get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
-        private IIterator _allowedValuesIter
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
             {
                 throw new System.NotImplementedException();
             }

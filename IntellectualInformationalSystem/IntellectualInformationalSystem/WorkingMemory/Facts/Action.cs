@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.IteratorPatternFiles
+namespace IntellectualInformationalSystem.WorkingMemory.Facts
 {
-    interface IIteratorAggregate
+    class Action
     {
-        IIterator CreateIterator();
+        protected Rule Rule;
     }
 }

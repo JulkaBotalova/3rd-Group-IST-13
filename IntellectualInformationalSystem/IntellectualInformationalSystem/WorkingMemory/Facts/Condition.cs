@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IntellectualInformationalSystem.WorkingMemory.Facts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,26 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
         }
 
         public int Sign
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
+        public ElementGetter<Rule> Rules
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public ElementGetter<Condition> Conditions
         {
             get
             {
