@@ -8,9 +8,9 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
 {
     interface IIterator
     {
-        Object GetCurrentItem();
-        Object GetFirst();
-        Object GetNext();
-        bool IsDone();
+        Object CurrentItem { get; }
+        Object First { get; }
+        Object Next { get; }
+        bool IsDone { get; }
     }
 }

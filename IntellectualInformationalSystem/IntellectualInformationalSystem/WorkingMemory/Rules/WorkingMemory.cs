@@ -1,4 +1,5 @@
 ﻿using IntellectualInformationalSystem.WorkingMemory.Facts;
+using IntellectualInformationalSystem.WorkingMemory.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class WorkingMemory
+    class WorkingMemory: IWmForGcc, IWmForLom
     {
-        public ElementGetter<Rule> Rules
+        private ElementGetter<Rule> _rulesToGet { get; set; }
+
+        public ElementGetter<Rule> RulesToGet
         {
             get
             {
@@ -17,7 +20,29 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        public IIterator FactsIterator
+        private ElementGetter<Fact> _factsToGet { get; set; }
+
+        public ElementGetter<Fact> FactsToGet
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
+        private ElementGetterAdder<Fact> _factsToGetAdd { get; set; }
+
+        public ElementGetterAdder<Fact> FactsToGetAdd
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
+        private ElementGetterAdder<Rule> _rulesToGetAdd { get; set; }
+
+        public ElementGetterAdder<Rule> RulesToGetAdd
         {
             get
             {

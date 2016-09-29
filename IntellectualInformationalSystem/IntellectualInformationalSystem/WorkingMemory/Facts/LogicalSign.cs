@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IntellectualInformationalSystem
 {
-    public enum LogicalSign
+    enum LogicalSign
     {
         ls_And,
         ls_Or

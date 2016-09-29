@@ -8,6 +8,10 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
 {
     class Action
     {
-        protected Rule Rule;
+        protected Rule _rule;
+        public Action(Rule rule)
+        {
+            _rule = rule;
+        } 
     }
 }

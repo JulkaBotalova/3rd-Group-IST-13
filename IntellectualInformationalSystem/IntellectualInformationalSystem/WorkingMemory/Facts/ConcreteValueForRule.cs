@@ -10,6 +10,8 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
     {
         private int _value;
 
+        public ConcreteValueForRule(Rule rule) : base(rule) { }
+
         public int Value
         {
             get

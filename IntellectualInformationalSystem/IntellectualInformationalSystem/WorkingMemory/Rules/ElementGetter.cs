@@ -10,6 +10,11 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
     {
         protected List<T> _items;
 
+        public ElementGetter(List<T> items)
+        {
+            _items = items;
+        }
+
         public int Length
         {
             get

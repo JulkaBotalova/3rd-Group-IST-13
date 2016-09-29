@@ -8,7 +8,19 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
 {
     class QuestionForRule : Action
     {
-        private string QuestionText;
+        private string _questionText;
+
+        public QuestionForRule(Rule rule) : base(rule) { }
+
+        private ElementGetter<AllowedValue> _allowedValues { get; set; }
+
+        public string QuestionText
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+        }
 
         public ElementGetter<AllowedValue> AllowedValues
         {

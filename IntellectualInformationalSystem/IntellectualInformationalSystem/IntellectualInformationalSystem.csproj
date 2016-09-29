@@ -54,16 +54,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="LogicalOutputMechanism\LogicalOutputMechanism.cs" />
+    <Compile Include="LogicalOutputMechanism\FactsIterator.cs" />
+    <Compile Include="WorkingMemory\Interface\ElementGetterAdder.cs" />
     <Compile Include="WorkingMemory\Facts\Action.cs" />
+    <Compile Include="WorkingMemory\Facts\Condition.cs" />
+    <Compile Include="WorkingMemory\Interface\IWmForGcc.cs" />
+    <Compile Include="WorkingMemory\Interface\IWmForLom.cs" />
     <Compile Include="WorkingMemory\Rules\ElementGetter.cs" />
     <Compile Include="WorkingMemory\Facts\Fact.cs" />
-    <Compile Include="WorkingMemory\Facts\IIterator.cs" />
+    <Compile Include="LogicalOutputMechanism\IIterator.cs" />
     <Compile Include="WorkingMemory\Facts\ConcreteValueForRule.cs" />
     <Compile Include="WorkingMemory\Facts\QuestionForRule.cs" />
     <Compile Include="WorkingMemory\Facts\LogicalSign.cs" />
-    <Compile Include="WorkingMemory\Facts\Condition.cs" />
+    <Compile Include="WorkingMemory\Facts\CompositeCondition.cs" />
     <Compile Include="WorkingMemory\Rules\AllowedValue.cs" />
+    <Compile Include="WorkingMemory\Rules\ElementGetterFactory.cs" />
     <Compile Include="WorkingMemory\Rules\Rule.cs" />
     <Compile Include="WorkingMemory\Rules\WorkingMemory.cs" />
     <Page Include="MainWindow.xaml">

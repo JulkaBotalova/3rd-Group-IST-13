@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class Rule
+    class Rule : Condition
     {
         private int _name;
         private int _value;
-        private bool _isNot;
 
         public int Name
         {
@@ -49,5 +48,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
                 throw new System.NotImplementedException();
             }
         }
+
+        private ElementGetter<object> _allowedValues { get; set; }
     }
 }
