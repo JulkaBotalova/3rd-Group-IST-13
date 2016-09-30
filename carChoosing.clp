@@ -1,4 +1,4 @@
-;;****************
+;;**************** hello
 ;;* DEFFUNCTIONS *
 ;;****************
 
@@ -15,39 +15,39 @@
    ?answer)
 
 (deffunction ask-about-price()
-	(bind ?answer (ask-question "Выберите ценовой диапазон. 1: до 1 млн.; 2: от 1 до 3 млн.; 3: больше 3 млн.: " 1 2 3))
+	(bind ?answer (ask-question "Г‚Г»ГЎГҐГ°ГЁГІГҐ Г¶ГҐГ­Г®ГўГ®Г© Г¤ГЁГ ГЇГ Г§Г®Г­. 1: Г¤Г® 1 Г¬Г«Г­.; 2: Г®ГІ 1 Г¤Г® 3 Г¬Г«Г­.; 3: ГЎГ®Г«ГјГёГҐ 3 Г¬Г«Г­.: " 1 2 3))
 	?answer
 )
 
 (deffunction ask-about-manufacturer()
-	(bind ?answer (ask-question "Вам нужен отечественный автомобиль или иномарка? 1: отечественный; 2: иномарка: " 1 2))
+	(bind ?answer (ask-question "Г‚Г Г¬ Г­ГіГ¦ГҐГ­ Г®ГІГҐГ·ГҐГ±ГІГўГҐГ­Г­Г»Г© Г ГўГІГ®Г¬Г®ГЎГЁГ«Гј ГЁГ«ГЁ ГЁГ­Г®Г¬Г Г°ГЄГ ? 1: Г®ГІГҐГ·ГҐГ±ГІГўГҐГ­Г­Г»Г©; 2: ГЁГ­Г®Г¬Г Г°ГЄГ : " 1 2))
 	?answer
 )
 
 (deffunction ask-about-seats(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите предпочитаемое количество мест. " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГЇГ°ГҐГ¤ГЇГ®Г·ГЁГІГ ГҐГ¬Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г¬ГҐГ±ГІ. " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question ?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-speed()
-	(bind ?answer (ask-question "Любите ли вы быструю езду? 1:да; 2:нет: " 1 2))
+	(bind ?answer (ask-question "Г‹ГѕГЎГЁГІГҐ Г«ГЁ ГўГ» ГЎГ»Г±ГІГ°ГіГѕ ГҐГ§Г¤Гі? 1:Г¤Г ; 2:Г­ГҐГІ: " 1 2))
 )
 
 (deffunction ask-about-landskape(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите местность, по которой планируете перемещаться на своём автомобиле. " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Г‚Г»ГЎГҐГ°ГЁГІГҐ Г¬ГҐГ±ГІГ­Г®Г±ГІГј, ГЇГ® ГЄГ®ГІГ®Г°Г®Г© ГЇГ«Г Г­ГЁГ°ГіГҐГІГҐ ГЇГҐГ°ГҐГ¬ГҐГ№Г ГІГјГ±Гї Г­Г  Г±ГўГ®ВёГ¬ Г ГўГІГ®Г¬Г®ГЎГЁГ«ГҐ. " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-landskape-priority(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите местность, которой будете отдавать приоритет " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Г‚Г»ГЎГҐГ°ГЁГІГҐ Г¬ГҐГ±ГІГ­Г®Г±ГІГј, ГЄГ®ГІГ®Г°Г®Г© ГЎГіГ¤ГҐГІГҐ Г®ГІГ¤Г ГўГ ГІГј ГЇГ°ГЁГ®Г°ГЁГІГҐГІ " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-carcase(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Выберите тип кузова " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Г‚Г»ГЎГҐГ°ГЁГІГҐ ГІГЁГЇ ГЄГіГ§Г®ГўГ  " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
@@ -84,7 +84,7 @@
 	(not (landskape ?))
 	(not (car ?))
 	=>
-	(assert (landskape (ask-about-landskape "1: город; 2: внедорожье; 3: город и внедорожье:" 1 2 3)))
+	(assert (landskape (ask-about-landskape "1: ГЈГ®Г°Г®Г¤; 2: ГўГ­ГҐГ¤Г®Г°Г®Г¦ГјГҐ; 3: ГЈГ®Г°Г®Г¤ ГЁ ГўГ­ГҐГ¤Г®Г°Г®Г¦ГјГҐ:" 1 2 3)))
 )
 
 (defrule determine-seats1 ""
@@ -92,7 +92,7 @@
 	(not (seats ?))
 	(not (car ?))
 	=>
-	(assert (seats (ask-about-seats "5 или 8" 5 8)))
+	(assert (seats (ask-about-seats "5 ГЁГ«ГЁ 8" 5 8)))
 )
 
 (defrule determine-landskape-priority1 ""
@@ -102,7 +102,7 @@
 	(not (landskape-priority ?))
 	(not (car ?))
 	=>
-	(assert (landskape-priority (ask-about-landskape-priority "1: город, 2: внедорожье" 1 2)))
+	(assert (landskape-priority (ask-about-landskape-priority "1: ГЈГ®Г°Г®Г¤, 2: ГўГ­ГҐГ¤Г®Г°Г®Г¦ГјГҐ" 1 2)))
 )
 
 (defrule determine-speed2 ""
@@ -119,7 +119,7 @@
 	(not (seats ?))
 	(not (car ?))
 	=>
-	(assert (seats (ask-about-seats "2 или 5 или 8" 2 5 8)))
+	(assert (seats (ask-about-seats "2 ГЁГ«ГЁ 5 ГЁГ«ГЁ 8" 2 5 8)))
 )
 
 (defrule determine-carcase1 ""
@@ -127,7 +127,7 @@
 	(not (carcase ?))
 	(not (car ?))
 	=>
-	(assert (carcase (ask-about-carcase "1: кабриолет; 2: купе" 1 2)))
+	(assert (carcase (ask-about-carcase "1: ГЄГ ГЎГ°ГЁГ®Г«ГҐГІ; 2: ГЄГіГЇГҐ" 1 2)))
 )
 
 (defrule determine-landskape2 ""
@@ -136,7 +136,7 @@
 	(not (landskape ?))
 	(not (car ?))
 	=>
-	(assert (landskape (ask-about-landskape "1: город; 2: внедорожье:" 1 2)))
+	(assert (landskape (ask-about-landskape "1: ГЈГ®Г°Г®Г¤; 2: ГўГ­ГҐГ¤Г®Г°Г®Г¦ГјГҐ:" 1 2)))
 )
 
 (defrule determine-speed3 ""
@@ -172,7 +172,7 @@
 	(manufacturer 1)
 	(not (car ?))
 	=>
-	(assert (car "УАЗ Патриот"))
+	(assert (car "Г“ГЂГ‡ ГЏГ ГІГ°ГЁГ®ГІ"))
 )
 
 (defrule jeep-wrangler-sahara ""
@@ -276,7 +276,7 @@
   (car ?item)
   =>
   (printout t crlf crlf)
-  (printout t "Вам подходит автомобиль:")
+  (printout t "Г‚Г Г¬ ГЇГ®Г¤ГµГ®Г¤ГЁГІ Г ГўГІГ®Г¬Г®ГЎГЁГ«Гј:")
   (printout t crlf crlf)
   (printout t ?item crlf crlf)
   )
