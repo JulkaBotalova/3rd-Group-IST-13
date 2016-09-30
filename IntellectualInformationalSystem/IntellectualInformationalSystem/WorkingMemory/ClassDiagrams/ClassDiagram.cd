@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="IntellectualInformationalSystem.WorkingMemory.AllowedValue">
-    <Position X="11.25" Y="10.25" Width="2.25" />
+    <Position X="10.5" Y="11.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAAAAAAIAAAACAAAAAA=</HashCode>
       <FileName>WorkingMemory\Rules\AllowedValue.cs</FileName>
@@ -110,7 +110,7 @@
     <Position X="16.75" Y="12.25" Width="2" />
     <InheritanceLine Type="IntellectualInformationalSystem.WorkingMemory.Facts.Action" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="16.25" Y="11.555" />
+        <Point X="16.25" Y="11.103" />
         <Point X="16.25" Y="11.875" />
         <Point X="17.75" Y="11.875" />
         <Point X="17.75" Y="12.25" />
@@ -125,28 +125,16 @@
     <Position X="13.75" Y="12.25" Width="1.5" />
     <InheritanceLine Type="IntellectualInformationalSystem.WorkingMemory.Facts.Action" ManuallyRouted="true" FixedFromPoint="true">
       <Path>
-        <Point X="16.25" Y="11.555" />
+        <Point X="16.25" Y="11.103" />
         <Point X="16.25" Y="11.875" />
         <Point X="14.5" Y="11.875" />
         <Point X="14.5" Y="12.25" />
       </Path>
     </InheritanceLine>
-    <AssociationLine Name="_allowedValues" Type="IntellectualInformationalSystem.WorkingMemory.Facts.ElementGetter&lt;T&gt;" FixedToPoint="true">
-      <Path>
-        <Point X="14.125" Y="12.25" />
-        <Point X="14.125" Y="9.949" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-1.244" Y="0.231" />
-      </MemberNameLabel>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAICAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAICAAA=</HashCode>
       <FileName>WorkingMemory\Facts\QuestionForRule.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="_allowedValues" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.Facts.Action">
     <Position X="15.5" Y="10" Width="1.5" />
@@ -154,6 +142,9 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>WorkingMemory\Facts\Action.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_rule" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.Facts.Fact">
     <Position X="15.5" Y="7.75" Width="1.5" />
@@ -212,8 +203,8 @@
       <FileName>WorkingMemory\Rules\ElementGetterFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="IntellectualInformationalSystem.WorkingMemory.Interface.IWmForGcc">
-    <Position X="15" Y="1" Width="1.5" />
+  <Interface Name="IntellectualInformationalSystem.WorkingMemory.Interface.IWmForGcc" Collapsed="true">
+    <Position X="14.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>WorkingMemory\Interface\IWmForGcc.cs</FileName>

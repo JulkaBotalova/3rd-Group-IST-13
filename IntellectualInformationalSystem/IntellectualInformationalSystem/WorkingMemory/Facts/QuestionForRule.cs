@@ -12,8 +12,6 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
 
         public QuestionForRule(Rule rule) : base(rule) { }
 
-        private ElementGetter<AllowedValue> _allowedValues { get; set; }
-
         public string QuestionText
         {
             get
