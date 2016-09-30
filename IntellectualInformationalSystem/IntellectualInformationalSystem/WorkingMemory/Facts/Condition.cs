@@ -9,5 +9,13 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
     class Condition
     {
         protected bool _isNot;
+
+        public bool IsNot
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+        }
     }
 }

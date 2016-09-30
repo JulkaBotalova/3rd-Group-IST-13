@@ -33,14 +33,6 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        public bool IsNot
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
         public ElementGetter<AllowedValue> AllowedValues
         {
             get

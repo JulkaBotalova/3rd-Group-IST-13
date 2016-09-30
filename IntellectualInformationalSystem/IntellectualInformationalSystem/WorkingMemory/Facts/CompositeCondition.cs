@@ -11,14 +11,6 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
     {
         private LogicalSign _sign;
 
-        public bool IsNot
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
         public int Sign
         {
             get
