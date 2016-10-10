@@ -41,6 +41,6 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        private ElementGetter<object> _allowedValues { get; set; }
+        private ElementGetter<AllowedValue> _allowedValues { get; set; }
     }
 }

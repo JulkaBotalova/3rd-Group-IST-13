@@ -27,5 +27,7 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
                 throw new System.NotImplementedException();
             }
         }
+
+        private ElementGetter<AllowedValue> _allowedValues { get; set; }
     }
 }

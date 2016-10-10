@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory.Interface
 {
-    interface IWmForGcc
+    interface IWmForCgc
     {
-        ElementGetterAdder<Fact> FactsToGetAdd { get; }
+        ElementGetterAdder<Fact> Rules1ToGetAdd { get; }
         ElementGetterAdder<Rule> RulesToGetAdd { get; }
     }
 }

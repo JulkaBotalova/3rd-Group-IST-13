@@ -8,19 +8,9 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class WorkingMemory: IWmForGcc, IWmForLom
+    class WorkingMemory: IWmForCgc, IWmForLom
     {
         private ElementGetter<Rule> _rulesToGet { get; set; }
-
-        public ElementGetter<Rule> RulesToGet
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
-        private ElementGetter<Fact> _factsToGet { get; set; }
 
         public ElementGetter<Fact> FactsToGet
         {
@@ -30,9 +20,19 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
+        private ElementGetter<Fact> _factsToGet { get; set; }
+
+        public ElementGetter<Rule> RulesToGet
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
         private ElementGetterAdder<Fact> _factsToGetAdd { get; set; }
 
-        public ElementGetterAdder<Fact> FactsToGetAdd
+        public ElementGetterAdder<Rule> RulesToGetAdd
         {
             get
             {
@@ -42,7 +42,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
 
         private ElementGetterAdder<Rule> _rulesToGetAdd { get; set; }
 
-        public ElementGetterAdder<Rule> RulesToGetAdd
+        public ElementGetterAdder<Fact> FactsToGetAdd
         {
             get
             {

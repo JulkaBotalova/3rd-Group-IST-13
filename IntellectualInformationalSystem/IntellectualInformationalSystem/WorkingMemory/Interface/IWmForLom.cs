@@ -9,7 +9,7 @@ namespace IntellectualInformationalSystem.WorkingMemory.Interface
 {
     interface IWmForLom
     {
-        Facts.ElementGetter<Fact> FactsToGet { get; }
-        Facts.ElementGetter<Rule> RulesToGet { get; }
+        Facts.ElementGetter<Fact> RulesToGet { get; }
+        Facts.ElementGetter<Rule> FactToGet { get; }
     }
 }
