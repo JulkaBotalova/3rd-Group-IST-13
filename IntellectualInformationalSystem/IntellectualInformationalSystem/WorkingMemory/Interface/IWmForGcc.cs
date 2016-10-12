@@ -9,7 +9,7 @@ namespace IntellectualInformationalSystem.WorkingMemory.Interface
 {
     interface IWmForCgc
     {
-        ElementGetterAdder<Fact> Rules1ToGetAdd { get; }
-        ElementGetterAdder<Rule> RulesToGetAdd { get; }
+        ElementGetterAdder<Fact> RulesToGetAdd { get; }
+        ElementGetterAdder<Rule> FactsToGetAdd { get; }
     }
 }

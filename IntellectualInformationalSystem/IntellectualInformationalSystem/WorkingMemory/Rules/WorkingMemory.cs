@@ -12,7 +12,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
     {
         private ElementGetter<Rule> _rulesToGet { get; set; }
 
-        public ElementGetter<Fact> FactsToGet
+        public ElementGetter<Rule> RulesToGet
         {
             get
             {
@@ -22,7 +22,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
 
         private ElementGetter<Fact> _factsToGet { get; set; }
 
-        public ElementGetter<Rule> RulesToGet
+        public ElementGetter<Fact> FactsToGet
         {
             get
             {
@@ -32,7 +32,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
 
         private ElementGetterAdder<Fact> _factsToGetAdd { get; set; }
 
-        public ElementGetterAdder<Rule> RulesToGetAdd
+        public ElementGetterAdder<Fact> FactsToGetAdd
         {
             get
             {
@@ -42,7 +42,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
 
         private ElementGetterAdder<Rule> _rulesToGetAdd { get; set; }
 
-        public ElementGetterAdder<Fact> FactsToGetAdd
+        public ElementGetterAdder<Rule> RulesToGetAdd
         {
             get
             {

@@ -222,7 +222,7 @@
   <Interface Name="IntellectualInformationalSystem.WorkingMemory.Interface.IWmForCgc" Collapsed="true">
     <Position X="14.25" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>WorkingMemory\Interface\IWmForGcc.cs</FileName>
     </TypeIdentifier>
   </Interface>
