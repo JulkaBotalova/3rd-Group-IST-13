@@ -11,8 +11,6 @@ namespace IntellectualInformationalSystem.WorkingMemory
 
         private Action _action { get; set; }
 
-        private ElementGetter<Condition> _conditions { get; set; }
-
         public Action Action
         {
             get
@@ -23,10 +21,7 @@ namespace IntellectualInformationalSystem.WorkingMemory
 
         public ElementGetter<Condition> Conditions
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get;
         }
     }
 }

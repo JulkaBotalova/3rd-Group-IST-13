@@ -2,52 +2,47 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="IntellectualInformationalSystem.WorkingMemory.WorkingMemory">
     <Position X="7" Y="1.75" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Properties" Collapsed="true" />
-    </Compartments>
-    <AssociationLine Name="_factsToGet" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetter&lt;T&gt;" FixedToPoint="true">
+    <AssociationLine Name="FactsToGet" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetter&lt;T&gt;" FixedFromPoint="true">
       <Path>
-        <Point X="7.5" Y="2.661" />
-        <Point X="7.5" Y="6.5" />
+        <Point X="8.062" Y="2.618" />
+        <Point X="8.062" Y="6.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.074" Y="1.147" />
+        <Position X="-1.033" Y="0.295" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="_rulesToGet" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetter&lt;T&gt;">
+    <AssociationLine Name="RulesToGet" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetter&lt;T&gt;">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.998" Y="0.162" />
+        <Position X="0.125" Y="1.394" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="_rulesToGetAdd" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetterAdder&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="RulesToGetAdd" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetterAdder&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7" Y="2.462" />
-        <Point X="5.656" Y="2.462" />
-        <Point X="5.656" Y="3.75" />
+        <Point X="7" Y="2.187" />
+        <Point X="5.375" Y="2.187" />
+        <Point X="5.375" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FactsToGetAdd" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetterAdder&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="2.618" />
+        <Point X="7.375" Y="2.993" />
+        <Point X="5.75" Y="2.993" />
+        <Point X="5.75" Y="3.75" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-1.245" Y="0.11" />
-      </MemberNameLabel>
-    </AssociationLine>
-    <AssociationLine Name="_factsToGetAdd" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetterAdder&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="7" Y="2.021" />
-        <Point X="5.047" Y="2.021" />
-        <Point X="5.047" Y="3.75" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="0.015" Y="0.719" Height="0.182" Width="1.373" />
+        <Position X="-1.23" Y="0.139" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAGAAABAAAAAAAEBAAAAAAEAgAABA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAGAAABAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Working Memory\WorkingMemory.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="_factsToGet" />
-      <Property Name="_rulesToGet" />
-      <Property Name="_rulesToGetAdd" />
-      <Property Name="_factsToGetAdd" />
+      <Property Name="FactsToGet" />
+      <Property Name="RulesToGet" />
+      <Property Name="RulesToGetAdd" />
+      <Property Name="FactsToGetAdd" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -76,23 +71,23 @@
   <Class Name="IntellectualInformationalSystem.WorkingMemory.Rule">
     <Position X="10.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAQ=</HashCode>
       <FileName>Working Memory\Rule.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="_conditions" />
       <Property Name="_action" />
+      <Property Name="Conditions" />
     </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.Action">
     <Position X="10" Y="8.5" Width="1.5" />
     <AssociationLine Name="_fact" Type="IntellectualInformationalSystem.WorkingMemory.Fact" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="10" Y="9.25" />
-        <Point X="7.833" Y="9.25" Type="JumpStart" />
-        <Point X="7.667" Y="9.25" Type="JumpEnd" />
-        <Point X="1.312" Y="9.25" />
-        <Point X="1.312" Y="8.261" />
+        <Point X="10" Y="9.438" />
+        <Point X="7.958" Y="9.438" Type="JumpStart" />
+        <Point X="7.792" Y="9.438" Type="JumpEnd" />
+        <Point X="1.312" Y="9.438" />
+        <Point X="1.312" Y="7.934" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -104,37 +99,30 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.Fact">
-    <Position X="0.5" Y="6" Width="1.5" />
-    <AssociationLine Name="_allowedValues" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="1.75" Y="8.261" />
-        <Point X="1.75" Y="8.438" />
-        <Point X="6.75" Y="8.438" />
-      </Path>
-    </AssociationLine>
+    <Position X="0.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAgAAgAAIAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAIAAAA=</HashCode>
       <FileName>Working Memory\Fact.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="_allowedValues" />
+      <Property Name="AllowedValues" />
     </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.Condition">
     <Position X="2" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Working Memory\Condition.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.CompositeCondition">
     <Position X="3.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Working Memory\CompositeCondition.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="_conditions" />
+      <Property Name="Conditions" />
     </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.ElementGetterRuleory&lt;T&gt;">
@@ -146,37 +134,37 @@
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.QuestionForFact">
     <Position X="8.5" Y="10.25" Width="1.5" />
-    <AssociationLine Name="_allowedValues" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="AllowedValues" Type="IntellectualInformationalSystem.WorkingMemory.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.5" Y="10.688" />
-        <Point X="7.75" Y="10.688" />
-        <Point X="7.75" Y="8.699" />
+        <Point X="8.5" Y="10.841" />
+        <Point X="7.875" Y="10.841" />
+        <Point X="7.875" Y="8.699" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAICAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Working Memory\QuestionForFact.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="_allowedValues" />
+      <Property Name="AllowedValues" />
     </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.AllowedValue">
     <Position X="5.75" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAAAAAAIAAAACAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Working Memory\AllowedValue.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.ConcreteValueForFact">
     <Position X="11" Y="10.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Working Memory\ConcreteValueForFact.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="IntellectualInformationalSystem.WorkingMemory.LogicalSign">
-    <Position X="11.75" Y="4.25" Width="1.5" />
+    <Position X="9.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Working Memory\LogicalSign.cs</FileName>

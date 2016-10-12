@@ -8,14 +8,10 @@ namespace IntellectualInformationalSystem.WorkingMemory
 {
     class Condition
     {
-        protected bool _isNot;
 
         public bool IsNot
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get;
         }
     }
 }

@@ -8,23 +8,15 @@ namespace IntellectualInformationalSystem.WorkingMemory
 {
     class AllowedValue
     {
-        private int _id;
-        private int _text;
 
         public int Id
         {
-            get
-            {
-                return _id;
-            }
+            get;
         }
 
         public int Text
         {
-            get
-            {
-                return _text;
-            }
+            get;
         }
     }
 }
