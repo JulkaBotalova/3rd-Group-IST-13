@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntellectualInformationalSystem", "IntellectualInformationalSystem\IntellectualInformationalSystem.csproj", "{AAE0A0B7-56F8-4B25-9AC7-39DC485F98A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntellectualInformationalSystem", "IntellectualInformationalSystem\IntellectualInformationalSystem.csproj", "{9B60960B-09DD-47B1-BA8D-349847EC8EE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AAE0A0B7-56F8-4B25-9AC7-39DC485F98A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAE0A0B7-56F8-4B25-9AC7-39DC485F98A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AAE0A0B7-56F8-4B25-9AC7-39DC485F98A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAE0A0B7-56F8-4B25-9AC7-39DC485F98A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B60960B-09DD-47B1-BA8D-349847EC8EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B60960B-09DD-47B1-BA8D-349847EC8EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B60960B-09DD-47B1-BA8D-349847EC8EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B60960B-09DD-47B1-BA8D-349847EC8EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

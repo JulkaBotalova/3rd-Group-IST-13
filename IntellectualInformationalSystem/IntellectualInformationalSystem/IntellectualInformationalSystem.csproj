@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AAE0A0B7-56F8-4B25-9AC7-39DC485F98A9}</ProjectGuid>
+    <ProjectGuid>{9B60960B-09DD-47B1-BA8D-349847EC8EE4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IntellectualInformationalSystem</RootNamespace>
@@ -54,23 +54,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="LogicalOutputMechanism\FactsIterator.cs" />
-    <Compile Include="WorkingMemory\Interface\ElementGetterAdder.cs" />
-    <Compile Include="WorkingMemory\Facts\Action.cs" />
-    <Compile Include="WorkingMemory\Facts\Condition.cs" />
-    <Compile Include="WorkingMemory\Interface\IWmForGcc.cs" />
-    <Compile Include="WorkingMemory\Interface\IWmForLom.cs" />
-    <Compile Include="WorkingMemory\Rules\ElementGetter.cs" />
-    <Compile Include="WorkingMemory\Facts\Fact.cs" />
     <Compile Include="LogicalOutputMechanism\IIterator.cs" />
-    <Compile Include="WorkingMemory\Facts\ConcreteValueForRule.cs" />
-    <Compile Include="WorkingMemory\Facts\QuestionForRule.cs" />
-    <Compile Include="WorkingMemory\Facts\LogicalSign.cs" />
-    <Compile Include="WorkingMemory\Facts\CompositeCondition.cs" />
-    <Compile Include="WorkingMemory\Rules\AllowedValue.cs" />
-    <Compile Include="WorkingMemory\Rules\ElementGetterFactory.cs" />
-    <Compile Include="WorkingMemory\Rules\Rule.cs" />
-    <Compile Include="WorkingMemory\Rules\WorkingMemory.cs" />
+    <Compile Include="LogicalOutputMechanism\RulesIterator.cs" />
+    <Compile Include="Working Memory\AllowedValue.cs" />
+    <Compile Include="Working Memory\ElementGetter.cs" />
+    <Compile Include="Working Memory\ElementGetterFactory.cs" />
+    <Compile Include="Working Memory\Fact.cs" />
+    <Compile Include="Working Memory\WorkingMemory.cs" />
+    <Compile Include="Working Memory\ElementGetterAdder.cs" />
+    <Compile Include="Working Memory\Interfaces\IWmForGgc.cs" />
+    <Compile Include="Working Memory\Interfaces\IWmForLom.cs" />
+    <Compile Include="Working Memory\Action.cs" />
+    <Compile Include="Working Memory\CompositeCondition.cs" />
+    <Compile Include="Working Memory\ConcreteValueForFact.cs" />
+    <Compile Include="Working Memory\Condition.cs" />
+    <Compile Include="Working Memory\LogicalSign.cs" />
+    <Compile Include="Working Memory\QuestionForFact.cs" />
+    <Compile Include="Working Memory\Rule.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -102,7 +102,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="WorkingMemory\ClassDiagrams\ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,7 +112,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Working Memory\ClassDiagrams\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

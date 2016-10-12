@@ -1,5 +1,4 @@
-﻿using IntellectualInformationalSystem.WorkingMemory.Facts;
-using IntellectualInformationalSystem.WorkingMemory.Interface;
+﻿using IntellectualInformationalSystem.WorkingMemory.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,16 +9,6 @@ namespace IntellectualInformationalSystem.WorkingMemory
 {
     class WorkingMemory: IWmForCgc, IWmForLom
     {
-        private ElementGetter<Rule> _rulesToGet { get; set; }
-
-        public ElementGetter<Rule> RulesToGet
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-
         private ElementGetter<Fact> _factsToGet { get; set; }
 
         public ElementGetter<Fact> FactsToGet
@@ -30,9 +19,9 @@ namespace IntellectualInformationalSystem.WorkingMemory
             }
         }
 
-        private ElementGetterAdder<Fact> _factsToGetAdd { get; set; }
+        private ElementGetter<Rule> _rulesToGet { get; set; }
 
-        public ElementGetterAdder<Fact> FactsToGetAdd
+        public ElementGetter<Rule> RulesToGet
         {
             get
             {
@@ -43,6 +32,16 @@ namespace IntellectualInformationalSystem.WorkingMemory
         private ElementGetterAdder<Rule> _rulesToGetAdd { get; set; }
 
         public ElementGetterAdder<Rule> RulesToGetAdd
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
+        private ElementGetterAdder<Fact> _factsToGetAdd { get; set; }
+
+        public ElementGetterAdder<Fact> FactsToGetAdd
         {
             get
             {

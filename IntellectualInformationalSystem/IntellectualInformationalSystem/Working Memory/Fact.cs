@@ -1,5 +1,4 @@
-﻿using IntellectualInformationalSystem.WorkingMemory.Facts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class Rule : Condition
+    class Fact : Condition
     {
         private int _name;
         private int _value;

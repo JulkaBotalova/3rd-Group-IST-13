@@ -1,13 +1,12 @@
-﻿using IntellectualInformationalSystem.WorkingMemory.Facts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory.Rules
+namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class ElementGetterFactory<T>
+    class ElementGetterRuleory<T>
     {
         public ElementGetter<T> CreateElementGetter(List<T> items)
         {

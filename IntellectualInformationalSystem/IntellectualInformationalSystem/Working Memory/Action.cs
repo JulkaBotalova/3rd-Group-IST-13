@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory.Facts
+namespace IntellectualInformationalSystem.WorkingMemory
 {
     class Action
     {
-        protected Rule _rule;
-        public Action(Rule rule)
+        protected Fact _fact;
+        public Action(Fact fact)
         {
-            _rule = rule;
+            _fact = fact;
         } 
     }
 }

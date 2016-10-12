@@ -1,4 +1,4 @@
-﻿using IntellectualInformationalSystem.WorkingMemory.Facts;
+﻿using IntellectualInformationalSystem.WorkingMemory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.LogicalOutputMechanism
 {
-    class FactsIterator : IIterator
+    class RulesIterator : IIterator
     {
-        private ElementGetter<Fact> _facts { get; set; }
+        private ElementGetter<Rule> _rules { get; set; }
 
         public object CurrentItem
         {

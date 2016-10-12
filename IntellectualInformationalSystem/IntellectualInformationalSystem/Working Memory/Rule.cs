@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory.Facts
+namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class QuestionForRule : Action
+    class Rule
     {
-        private string _questionText;
 
-        public QuestionForRule(Rule rule) : base(rule) { }
+        private Action _action { get; set; }
 
-        public string QuestionText
+        private ElementGetter<Condition> _conditions { get; set; }
+
+        public Action Action
         {
             get
             {
@@ -20,14 +21,12 @@ namespace IntellectualInformationalSystem.WorkingMemory.Facts
             }
         }
 
-        public ElementGetter<AllowedValue> AllowedValues
+        public ElementGetter<Condition> Conditions
         {
             get
             {
                 throw new System.NotImplementedException();
             }
         }
-
-        private ElementGetter<AllowedValue> _allowedValues { get; set; }
     }
 }

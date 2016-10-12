@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory.Facts
+namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class ConcreteValueForRule : Action
+    class ConcreteValueForFact : Action
     {
         private int _value;
 
-        public ConcreteValueForRule(Rule rule) : base(rule) { }
+        public ConcreteValueForFact(Fact fact) : base(fact) { }
 
         public int Value
         {
