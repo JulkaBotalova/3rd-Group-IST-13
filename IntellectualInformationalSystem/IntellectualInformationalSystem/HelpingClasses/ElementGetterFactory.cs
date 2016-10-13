@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory
+namespace IntellectualInformationalSystem.HelpingClasses
 {
-    class ElementGetterRuleory<T>
+    class ElementGetterFactory<T>
     {
         public ElementGetter<T> CreateElementGetter(List<T> items)
         {

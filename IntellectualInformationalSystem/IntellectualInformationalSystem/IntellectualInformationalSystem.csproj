@@ -54,23 +54,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="KnowledgeBase\Interfaces\IKbForCgc.cs" />
+    <Compile Include="KnowledgeBase\Interfaces\IKbForLom.cs" />
+    <Compile Include="KnowledgeBase\KnowledgeBase.cs" />
     <Compile Include="LogicalOutputMechanism\IIterator.cs" />
     <Compile Include="LogicalOutputMechanism\RulesIterator.cs" />
-    <Compile Include="Working Memory\AllowedValue.cs" />
-    <Compile Include="Working Memory\ElementGetter.cs" />
-    <Compile Include="Working Memory\ElementGetterFactory.cs" />
-    <Compile Include="Working Memory\Fact.cs" />
-    <Compile Include="Working Memory\WorkingMemory.cs" />
-    <Compile Include="Working Memory\ElementGetterAdder.cs" />
-    <Compile Include="Working Memory\Interfaces\IWmForGgc.cs" />
-    <Compile Include="Working Memory\Interfaces\IWmForLom.cs" />
-    <Compile Include="Working Memory\Action.cs" />
-    <Compile Include="Working Memory\CompositeCondition.cs" />
-    <Compile Include="Working Memory\ConcreteValueForFact.cs" />
-    <Compile Include="Working Memory\Condition.cs" />
-    <Compile Include="Working Memory\LogicalSign.cs" />
-    <Compile Include="Working Memory\QuestionForFact.cs" />
-    <Compile Include="Working Memory\Rule.cs" />
+    <Compile Include="KnowledgeBase\AllowedValue.cs" />
+    <Compile Include="HelpingClasses\ElementGetter.cs" />
+    <Compile Include="HelpingClasses\ElementGetterFactory.cs" />
+    <Compile Include="KnowledgeBase\Fact.cs" />
+    <Compile Include="WorkingMemory\WorkingMemory.cs" />
+    <Compile Include="HelpingClasses\ElementGetterAdder.cs" />
+    <Compile Include="WorkingMemory\Interfaces\IWmForGgc.cs" />
+    <Compile Include="WorkingMemory\Interfaces\IWmForLom.cs" />
+    <Compile Include="WorkingMemory\Action.cs" />
+    <Compile Include="KnowledgeBase\CompositeCondition.cs" />
+    <Compile Include="WorkingMemory\ConcreteValueForFact.cs" />
+    <Compile Include="KnowledgeBase\Condition.cs" />
+    <Compile Include="KnowledgeBase\LogicalSign.cs" />
+    <Compile Include="WorkingMemory\QuestionForFact.cs" />
+    <Compile Include="WorkingMemory\Rule.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -102,7 +105,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="KnowledgeBase\KnowledgeBaseClassDiagram.cd" />
+    <None Include="WorkingMemory\WorkingMemoryClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,9 +116,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Working Memory\ClassDiagrams\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

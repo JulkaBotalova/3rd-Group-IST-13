@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IntellectualInformationalSystem.HelpingClasses;
+using IntellectualInformationalSystem.KnowledgeBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +11,9 @@ namespace IntellectualInformationalSystem.WorkingMemory
     class Rule
     {
 
-        private Action _action { get; set; }
-
         public Action Action
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get;
         }
 
         public ElementGetter<Condition> Conditions

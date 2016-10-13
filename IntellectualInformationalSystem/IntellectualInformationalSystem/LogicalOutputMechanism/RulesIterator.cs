@@ -1,4 +1,5 @@
-﻿using IntellectualInformationalSystem.WorkingMemory;
+﻿using IntellectualInformationalSystem.HelpingClasses;
+using IntellectualInformationalSystem.WorkingMemory;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.Fact">
+    <Position X="8.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAIAAAA=</HashCode>
+      <FileName>KnowledgeBase\Fact.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AllowedValues" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.KnowledgeBase">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <AssociationLine Name="FactsToGet" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.032" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\KnowledgeBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FactsToGet" />
+      <Property Name="FactsToGetAdd" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;">
+    <Position X="5.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAABAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>HelpingClasses\ElementGetter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterAdder&lt;T&gt;">
+    <Position X="4" Y="6.25" Width="2.25" />
+    <InheritanceLine Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="6.125" Y="5.449" />
+        <Point X="6.125" Y="5.875" />
+        <Point X="5.781" Y="5.875" />
+        <Point X="5.781" Y="6.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HelpingClasses\ElementGetterAdder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.CompositeCondition">
+    <Position X="10" Y="5" Width="2" />
+    <AssociationLine Name="Conditions" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="6.054" />
+        <Point X="6.562" Y="6.054" />
+        <Point X="6.562" Y="5.449" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.923" Y="0.243" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\CompositeCondition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Conditions" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.Condition">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\Condition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterFactory&lt;T&gt;">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>HelpingClasses\ElementGetterFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IntellectualInformationalSystem.KnowledgeBase.Interfaces.IKbForCgc">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\Interfaces\IKbForCgc.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IntellectualInformationalSystem.KnowledgeBase.Interfaces.IKbForLom">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\Interfaces\IKbForLom.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="IntellectualInformationalSystem.KnowledgeBase.LogicalSign">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\LogicalSign.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

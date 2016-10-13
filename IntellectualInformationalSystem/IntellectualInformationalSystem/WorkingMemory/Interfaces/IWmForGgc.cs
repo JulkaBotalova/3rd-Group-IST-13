@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IntellectualInformationalSystem.HelpingClasses;
+using IntellectualInformationalSystem.KnowledgeBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +11,5 @@ namespace IntellectualInformationalSystem.WorkingMemory.Interfaces
     interface IWmForCgc
     {
         ElementGetterAdder<Rule> RulesToGetAdd { get; }
-        ElementGetterAdder<Fact> FactsToGetAdd { get; }
     }
 }

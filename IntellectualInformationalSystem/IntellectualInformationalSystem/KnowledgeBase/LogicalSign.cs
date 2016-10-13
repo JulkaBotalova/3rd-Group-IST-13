@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace IntellectualInformationalSystem.WorkingMemory
+namespace IntellectualInformationalSystem.KnowledgeBase
 {
     enum LogicalSign
     {

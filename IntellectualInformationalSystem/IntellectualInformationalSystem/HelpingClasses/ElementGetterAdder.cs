@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory
+namespace IntellectualInformationalSystem.HelpingClasses
 {
     class ElementGetterAdder<T>: ElementGetter<T>
     {
