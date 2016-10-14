@@ -10,12 +10,12 @@ namespace IntellectualInformationalSystem.KnowledgeBase
 {
     class KnowledgeBase: IKbForLom, IKbForCgc
     {
-        public ElementGetter<Fact> FactsToGet
+        public ElementGetter<Fact> RulesToGet
         {
             get;
         }
 
-        public ElementGetterAdder<Fact> FactsToGetAdd
+        public ElementGetterAdder<Fact> RulesToGetAdd
         {
             get;
         }

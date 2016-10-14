@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.KnowledgeBase.Interfaces
 {
-    interface IKbForLom
+    interface IKbForCgc
     {
-        ElementGetter<Fact> FactsToGet { get; }
+        ElementGetterAdder<Fact> RulesToGetAdd { get; }
     }
 }

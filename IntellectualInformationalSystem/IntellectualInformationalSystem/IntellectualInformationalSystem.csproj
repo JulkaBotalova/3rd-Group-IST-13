@@ -54,8 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="KnowledgeBase\Interfaces\IKbForCgc.cs" />
-    <Compile Include="KnowledgeBase\Interfaces\IKbForLom.cs" />
+    <Compile Include="KnowledgeBase\AllowedValuesFactory.cs" />
+    <Compile Include="KnowledgeBase\Interfaces%28не используется%29\IKbForCgc.cs" />
+    <Compile Include="KnowledgeBase\Interfaces%28не используется%29\IKbForLom.cs" />
     <Compile Include="KnowledgeBase\KnowledgeBase.cs" />
     <Compile Include="LogicalOutputMechanism\IIterator.cs" />
     <Compile Include="LogicalOutputMechanism\RulesIterator.cs" />

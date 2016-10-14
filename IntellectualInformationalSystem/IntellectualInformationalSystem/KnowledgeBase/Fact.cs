@@ -10,8 +10,13 @@ namespace IntellectualInformationalSystem.KnowledgeBase
 {
     class Fact : Condition
     {
+        public Fact(string name)
+        {
+            Name = name;
+            AllowedValues = AllowedValuesFactory.CreateAllowedValuesFromFile(name);
+        }
 
-        public int Name
+        public string Name
         {
             get;
         }

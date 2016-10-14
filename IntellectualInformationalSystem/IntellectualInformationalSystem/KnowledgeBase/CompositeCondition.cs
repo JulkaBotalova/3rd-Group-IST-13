@@ -10,7 +10,7 @@ namespace IntellectualInformationalSystem.KnowledgeBase
     class CompositeCondition : Condition
     {
 
-        public int Sign
+        public LogicalSign Sign
         {
             get;
         }
