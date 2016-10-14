@@ -1,5 +1,5 @@
 ﻿using IntellectualInformationalSystem.HelpingClasses;
-using IntellectualInformationalSystem.WorkingMemory.Interfaces;
+using IntellectualInformationalSystem.KnowledgeBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;

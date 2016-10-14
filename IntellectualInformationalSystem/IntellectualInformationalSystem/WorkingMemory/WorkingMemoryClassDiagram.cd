@@ -1,20 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IntellectualInformationalSystem.WorkingMemory.Fact">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAIAAAA=</HashCode>
+      <FileName>WorkingMemory\Fact.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AllowedValues" />
+    </ShowAsAssociation>
+  </Class>
   <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;">
-    <Position X="6.75" Y="4.25" Width="2" />
+    <Position X="5.25" Y="2" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAABAABAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>HelpingClasses\ElementGetter.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterAdder&lt;T&gt;">
-    <Position X="4.75" Y="7.5" Width="2.25" />
-    <InheritanceLine Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+    <Position X="4" Y="5" Width="2.25" />
+    <InheritanceLine Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedToPoint="true">
       <Path>
-        <Point X="7.417" Y="6.449" />
-        <Point X="7.417" Y="7.125" />
-        <Point X="6.688" Y="7.125" />
-        <Point X="6.688" Y="7.5" />
+        <Point X="6.125" Y="4.199" />
+        <Point X="6.125" Y="4.625" />
+        <Point X="5.781" Y="4.625" />
+        <Point X="5.781" Y="5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -22,106 +32,50 @@
       <FileName>HelpingClasses\ElementGetterAdder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.Rule">
-    <Position X="10.25" Y="4.25" Width="1.5" />
+  <Class Name="IntellectualInformationalSystem.WorkingMemory.CompositeCondition">
+    <Position X="11.5" Y="3.5" Width="2" />
+    <AssociationLine Name="Conditions" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="4.733" />
+        <Point X="12" Y="5.136" />
+        <Point X="6.562" Y="5.136" />
+        <Point X="6.562" Y="4.199" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.923" Y="0.243" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
-      <FileName>WorkingMemory\Rule.cs</FileName>
+      <HashCode>AAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorkingMemory\CompositeCondition.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Action" />
       <Property Name="Conditions" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.Action">
-    <Position X="10" Y="6.25" Width="1.5" />
+  <Class Name="IntellectualInformationalSystem.WorkingMemory.Condition">
+    <Position X="10" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>WorkingMemory\Action.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>WorkingMemory\Condition.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_factToChange" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterFactory&lt;T&gt;">
-    <Position X="7.75" Y="3" Width="2.5" />
+    <Position X="7.25" Y="0.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>HelpingClasses\ElementGetterFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.QuestionForFact">
-    <Position X="8.5" Y="8.5" Width="1.5" />
-    <AssociationLine Name="AllowedValues" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="8.5" Y="9.062" />
-        <Point X="8.166" Y="9.062" />
-        <Point X="8.166" Y="6.449" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-1.296" Y="0.068" />
-      </MemberNameLabel>
-    </AssociationLine>
+  <Class Name="IntellectualInformationalSystem.WorkingMemory.WorkingMemory">
+    <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
-      <FileName>WorkingMemory\QuestionForFact.cs</FileName>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorkingMemory\WorkingMemory.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="AllowedValues" />
+      <Property Name="Facts" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="IntellectualInformationalSystem.KnowledgeBase.AllowedValue">
-    <Position X="3.25" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
-      <FileName>KnowledgeBase\AllowedValue.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.ConcreteValueForFact">
-    <Position X="11.25" Y="8.5" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>WorkingMemory\ConcreteValueForFact.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="IntellectualInformationalSystem.KnowledgeBase.Fact">
-    <Position X="13.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAIAAAA=</HashCode>
-      <FileName>KnowledgeBase\Fact.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="IntellectualInformationalSystem.KnowledgeBase.KnowledgeBase">
-    <Position X="5" Y="2.25" Width="1.5" />
-    <AssociationLine Name="RulesToGetAdd" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetterAdder&lt;T&gt;" FixedFromPoint="true">
-      <Path>
-        <Point X="5.438" Y="2.912" />
-        <Point X="5.438" Y="7.5" />
-      </Path>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
-      <FileName>KnowledgeBase\KnowledgeBase.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="RulesToGet" />
-      <Property Name="RulesToGetAdd" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Interface Name="IntellectualInformationalSystem.KnowledgeBase.Interfaces.IKbForLom">
-    <Position X="3" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
-      <FileName>KnowledgeBase\Interfaces(не используется)\IKbForLom.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="IntellectualInformationalSystem.KnowledgeBase.Interfaces.IKbForCgc">
-    <Position X="6.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>KnowledgeBase\Interfaces(не используется)\IKbForCgc.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

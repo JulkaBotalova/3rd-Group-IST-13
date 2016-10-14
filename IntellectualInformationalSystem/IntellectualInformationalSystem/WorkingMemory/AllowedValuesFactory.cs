@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.KnowledgeBase
+namespace IntellectualInformationalSystem.WorkingMemory
 {
     static class AllowedValuesFactory
     {

@@ -1,5 +1,4 @@
 ﻿using IntellectualInformationalSystem.HelpingClasses;
-using IntellectualInformationalSystem.KnowledgeBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,15 +7,20 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class QuestionForFact : Action
+    class Fact : Condition
     {
+        public Fact(string name)
+        {
+            Name = name;
+            AllowedValues = AllowedValuesFactory.CreateAllowedValuesFromFile(name);
+        }
 
-        public QuestionForFact(Fact fact) : base(fact){ }
-
-        public string QuestionText
+        public string Name
         {
             get;
         }
+
+        public int Value;
 
         public ElementGetter<AllowedValue> AllowedValues
         {

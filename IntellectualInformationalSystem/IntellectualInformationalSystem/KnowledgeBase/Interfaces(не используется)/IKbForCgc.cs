@@ -9,6 +9,6 @@ namespace IntellectualInformationalSystem.KnowledgeBase.Interfaces
 {
     interface IKbForCgc
     {
-        ElementGetterAdder<Fact> RulesToGetAdd { get; }
+        ElementGetterAdder<Rule> RulesToGetAdd { get; }
     }
 }

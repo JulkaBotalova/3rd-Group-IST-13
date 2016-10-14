@@ -4,12 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.KnowledgeBase
+namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class Condition
+    class AllowedValue
     {
 
-        public bool IsNot
+        public int Id
+        {
+            get;
+        }
+
+        public int Text
         {
             get;
         }

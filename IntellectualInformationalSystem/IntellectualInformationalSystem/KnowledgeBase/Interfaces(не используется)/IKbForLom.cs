@@ -9,6 +9,6 @@ namespace IntellectualInformationalSystem.KnowledgeBase.Interfaces
 {
     interface IKbForLom
     {
-        ElementGetter<Fact> RulesToGet { get; }
+        ElementGetter<Rule> RulesToGet { get; }
     }
 }
