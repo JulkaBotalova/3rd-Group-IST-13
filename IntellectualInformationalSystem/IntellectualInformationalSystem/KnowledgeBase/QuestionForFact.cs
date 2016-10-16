@@ -11,7 +11,11 @@ namespace IntellectualInformationalSystem.KnowledgeBase
     class QuestionForFact : Action
     {
 
-        public QuestionForFact(Fact fact) : base(fact){ }
+        public QuestionForFact(string factToChangeName, string questionText, ElementGetter<AllowedValue> allowedValues) : base(factToChangeName)
+        {
+            QuestionText = questionText;
+            AllowedValues = allowedValues;
+        }
 
         public string QuestionText
         {

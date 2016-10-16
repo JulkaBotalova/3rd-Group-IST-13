@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="WM- класс, представляющий рабочую память(Working Memory)">
+    <Position X="2.61" Y="0.786" Height="0.865" Width="1.7" />
+  </Comment>
   <Class Name="IntellectualInformationalSystem.WorkingMemory.Fact">
-    <Position X="8.5" Y="2.75" Width="1.5" />
+    <Position X="7.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAIAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>WorkingMemory\Fact.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="AllowedValues" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;">
-    <Position X="5.25" Y="2" Width="1.75" />
+    <Position X="5.25" Y="2" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAABAABAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>HelpingClasses\ElementGetter.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterAdder&lt;T&gt;">
-    <Position X="4" Y="5" Width="2.25" />
+    <Position X="4" Y="5" Width="2.75" />
     <InheritanceLine Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedToPoint="true">
       <Path>
-        <Point X="6.125" Y="4.199" />
-        <Point X="6.125" Y="4.625" />
-        <Point X="5.781" Y="4.625" />
-        <Point X="5.781" Y="5" />
+        <Point X="6.375" Y="4.199" />
+        <Point X="6.375" Y="4.625" />
+        <Point X="6.177" Y="4.625" />
+        <Point X="6.177" Y="5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -32,42 +32,14 @@
       <FileName>HelpingClasses\ElementGetterAdder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.CompositeCondition">
-    <Position X="11.5" Y="3.5" Width="2" />
-    <AssociationLine Name="Conditions" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="12" Y="4.733" />
-        <Point X="12" Y="5.136" />
-        <Point X="6.562" Y="5.136" />
-        <Point X="6.562" Y="4.199" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.923" Y="0.243" />
-      </MemberNameLabel>
-    </AssociationLine>
+  <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterAndGetterAdderFactory&lt;T&gt;">
+    <Position X="7.25" Y="0.5" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>WorkingMemory\CompositeCondition.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Conditions" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.Condition">
-    <Position X="10" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
-      <FileName>WorkingMemory\Condition.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>HelpingClasses\ElementGetterAndGetterAdderFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterFactory&lt;T&gt;">
-    <Position X="7.25" Y="0.75" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>HelpingClasses\ElementGetterFactory.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.WorkingMemory">
+  <Class Name="IntellectualInformationalSystem.WorkingMemory.WM">
     <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

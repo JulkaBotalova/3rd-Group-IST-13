@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class WorkingMemory//: IWmForCgc, IWmForLom
+    class WM
     {
+        public WM()
+        {
+            Facts = new ElementGetterAdder<Rule>();
+        }
 
         public ElementGetterAdder<Rule> Facts
         {

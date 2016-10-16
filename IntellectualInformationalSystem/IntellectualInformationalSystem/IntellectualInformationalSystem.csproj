@@ -54,25 +54,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="WorkingMemory\AllowedValuesFactory.cs" />
+    <Compile Include="KnowledgeBase\FactChecking.cs" />
     <Compile Include="KnowledgeBase\Interfaces%28не используется%29\IKbForCgc.cs" />
     <Compile Include="KnowledgeBase\Interfaces%28не используется%29\IKbForLom.cs" />
     <Compile Include="KnowledgeBase\KnowledgeBase.cs" />
     <Compile Include="LogicalOutputMechanism\IIterator.cs" />
     <Compile Include="LogicalOutputMechanism\RulesIterator.cs" />
-    <Compile Include="WorkingMemory\AllowedValue.cs" />
+    <Compile Include="KnowledgeBase\AllowedValue.cs" />
     <Compile Include="HelpingClasses\ElementGetter.cs" />
-    <Compile Include="HelpingClasses\ElementGetterFactory.cs" />
+    <Compile Include="HelpingClasses\ElementGetterAndGetterAdderFactory.cs" />
     <Compile Include="WorkingMemory\Fact.cs" />
     <Compile Include="WorkingMemory\WorkingMemory.cs" />
     <Compile Include="HelpingClasses\ElementGetterAdder.cs" />
     <Compile Include="WorkingMemory\Interfaces\IWmForGgc.cs" />
     <Compile Include="WorkingMemory\Interfaces\IWmForLom.cs" />
     <Compile Include="KnowledgeBase\Action.cs" />
-    <Compile Include="WorkingMemory\CompositeCondition.cs" />
+    <Compile Include="KnowledgeBase\CompositeCondition.cs" />
     <Compile Include="KnowledgeBase\ConcreteValueForFact.cs" />
-    <Compile Include="WorkingMemory\Condition.cs" />
-    <Compile Include="WorkingMemory\LogicalSign.cs" />
+    <Compile Include="KnowledgeBase\Condition.cs" />
+    <Compile Include="KnowledgeBase\LogicalSign.cs" />
     <Compile Include="KnowledgeBase\QuestionForFact.cs" />
     <Compile Include="KnowledgeBase\Rule.cs" />
     <Page Include="MainWindow.xaml">

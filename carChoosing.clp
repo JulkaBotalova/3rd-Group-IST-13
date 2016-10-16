@@ -15,39 +15,39 @@
    ?answer)
 
 (deffunction ask-about-price()
-	(bind ?answer (ask-question "Âûáåðèòå öåíîâîé äèàïàçîí. 1: äî 1 ìëí.; 2: îò 1 äî 3 ìëí.; 3: áîëüøå 3 ìëí.: " 1 2 3))
+	(bind ?answer (ask-question "Auaa?eoa oaiiaie aeaiacii. 1: ai 1 iei.; 2: io 1 ai 3 iei.; 3: aieuoa 3 iei.: " 1 2 3))
 	?answer
 )
 
 (deffunction ask-about-manufacturer()
-	(bind ?answer (ask-question "Âàì íóæåí îòå÷åñòâåííûé àâòîìîáèëü èëè èíîìàðêà? 1: îòå÷åñòâåííûé; 2: èíîìàðêà: " 1 2))
+	(bind ?answer (ask-question "Aai io?ai ioa?anoaaiiue aaoiiiaeeu eee eiiia?ea? 1: ioa?anoaaiiue; 2: eiiia?ea: " 1 2))
 	?answer
 )
 
 (deffunction ask-about-seats(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Âûáåðèòå ïðåäïî÷èòàåìîå êîëè÷åñòâî ìåñò. " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Auaa?eoa i?aaii?eoaaiia eiee?anoai iano. " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question ?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-speed()
-	(bind ?answer (ask-question "Ëþáèòå ëè âû áûñòðóþ åçäó? 1:äà; 2:íåò: " 1 2))
+	(bind ?answer (ask-question "E?aeoa ee au auno?o? acao? 1:aa; 2:iao: " 1 2))
 )
 
 (deffunction ask-about-landskape(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Âûáåðèòå ìåñòíîñòü, ïî êîòîðîé ïëàíèðóåòå ïåðåìåùàòüñÿ íà ñâî¸ì àâòîìîáèëå. " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Auaa?eoa ianoiinou, ii eioi?ie ieaie?oaoa ia?aiauaouny ia nai?i aaoiiiaeea. " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-landskape-priority(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Âûáåðèòå ìåñòíîñòü, êîòîðîé áóäåòå îòäàâàòü ïðèîðèòåò " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Auaa?eoa ianoiinou, eioi?ie aoaaoa ioaaaaou i?ei?eoao " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
 
 (deffunction ask-about-carcase(?allowed-values-str $?allowed-values)
-	(bind ?question (str-cat "Âûáåðèòå òèï êóçîâà " ?allowed-values-str ": "))
+	(bind ?question (str-cat "Auaa?eoa oei eociaa " ?allowed-values-str ": "))
 	(bind ?answer (ask-question ?question $?allowed-values))
 	?answer
 )
@@ -84,7 +84,7 @@
 	(not (landskape ?))
 	(not (car ?))
 	=>
-	(assert (landskape (ask-about-landskape "1: ãîðîä; 2: âíåäîðîæüå; 3: ãîðîä è âíåäîðîæüå:" 1 2 3)))
+	(assert (landskape (ask-about-landskape "1: ai?ia; 2: aiaai?i?ua; 3: ai?ia e aiaai?i?ua:" 1 2 3)))
 )
 
 (defrule determine-seats1 ""
@@ -92,7 +92,7 @@
 	(not (seats ?))
 	(not (car ?))
 	=>
-	(assert (seats (ask-about-seats "5 èëè 8" 5 8)))
+	(assert (seats (ask-about-seats "5 eee 8" 5 8)))
 )
 
 (defrule determine-landskape-priority1 ""
@@ -102,7 +102,7 @@
 	(not (landskape-priority ?))
 	(not (car ?))
 	=>
-	(assert (landskape-priority (ask-about-landskape-priority "1: ãîðîä, 2: âíåäîðîæüå" 1 2)))
+	(assert (landskape-priority (ask-about-landskape-priority "1: ai?ia, 2: aiaai?i?ua" 1 2)))
 )
 
 (defrule determine-speed2 ""
@@ -119,7 +119,7 @@
 	(not (seats ?))
 	(not (car ?))
 	=>
-	(assert (seats (ask-about-seats "2 èëè 5 èëè 8" 2 5 8)))
+	(assert (seats (ask-about-seats "2 eee 5 eee 8" 2 5 8)))
 )
 
 (defrule determine-carcase1 ""
@@ -127,7 +127,7 @@
 	(not (carcase ?))
 	(not (car ?))
 	=>
-	(assert (carcase (ask-about-carcase "1: êàáðèîëåò; 2: êóïå" 1 2)))
+	(assert (carcase (ask-about-carcase "1: eaa?eieao; 2: eoia" 1 2)))
 )
 
 (defrule determine-landskape2 ""
@@ -136,7 +136,7 @@
 	(not (landskape ?))
 	(not (car ?))
 	=>
-	(assert (landskape (ask-about-landskape "1: ãîðîä; 2: âíåäîðîæüå:" 1 2)))
+	(assert (landskape (ask-about-landskape "1: ai?ia; 2: aiaai?i?ua:" 1 2)))
 )
 
 (defrule determine-speed3 ""
@@ -172,7 +172,7 @@
 	(manufacturer 1)
 	(not (car ?))
 	=>
-	(assert (car "ÓÀÇ Ïàòðèîò"))
+	(assert (car "OAC Iao?eio"))
 )
 
 (defrule jeep-wrangler-sahara ""
@@ -276,7 +276,7 @@
   (car ?item)
   =>
   (printout t crlf crlf)
-  (printout t "Âàì ïîäõîäèò àâòîìîáèëü:")
+  (printout t "Aai iiaoiaeo aaoiiiaeeu:")
   (printout t crlf crlf)
   (printout t ?item crlf crlf)
   )

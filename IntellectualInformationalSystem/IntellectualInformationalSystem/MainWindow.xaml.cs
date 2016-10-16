@@ -1,4 +1,5 @@
-﻿using IntellectualInformationalSystem.WorkingMemory;
+﻿using IntellectualInformationalSystem.KnowledgeBase;
+using IntellectualInformationalSystem.WorkingMemory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace IntellectualInformationalSystem
         public MainWindow()
         {
             InitializeComponent();
+            KB kb = new KB();
         }
     }
 }

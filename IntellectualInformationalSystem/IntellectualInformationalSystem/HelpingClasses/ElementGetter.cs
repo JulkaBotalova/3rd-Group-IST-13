@@ -10,6 +10,11 @@ namespace IntellectualInformationalSystem.HelpingClasses
     {
         protected List<T> _items;
 
+        public ElementGetter()
+        {
+            _items = new List<T>();
+        }
+
         public ElementGetter(List<T> items)
         {
             _items = items;

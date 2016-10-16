@@ -8,6 +8,8 @@ namespace IntellectualInformationalSystem.HelpingClasses
 {
     class ElementGetterAdder<T>: ElementGetter<T>
     {
+        public ElementGetterAdder() : base() { }
+
         public ElementGetterAdder(List<T> items) : base(items) { }
 
         public void AddItem(T item)

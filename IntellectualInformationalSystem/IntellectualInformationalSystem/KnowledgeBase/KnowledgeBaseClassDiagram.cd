@@ -1,5 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Множесвенные свзи произведены через классы ElementGetter(Adder)&lt;T&gt;">
+    <Position X="5.261" Y="6.612" Height="0.712" Width="1.825" />
+  </Comment>
+  <Comment CommentText="KB - класс, представляющий базу знаний (Knowledge Base)&#xD;&#xA;&#xD;&#xA;Пришлось его так коротко назвать, потому в определённый момент обнаружилось, что возникают трудности при доступе к этому классу. Это происходило из за схожести его имени с именем пространства имён, в котором он находится">
+    <Position X="2.846" Y="2.032" Height="3.447" Width="1.7" />
+  </Comment>
+  <Comment CommentText="ElementGetter создан для того, чтобы устранить зависимость проекта от конкретного способа хранения наборов данных">
+    <Position X="7.523" Y="3.182" Height="0.961" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Иерархия Condition-FactChecking-CompositeCondition отображает возможность создания солжных условий для правил.&#xD;&#xA;&#xD;&#xA;P.S. На данный момент используется только FactChecking">
+    <Position X="13.172" Y="4.571" Height="1.549" Width="2.699" />
+  </Comment>
+  <Comment CommentText="IKbForLom - интерфейс базы знаний, с которым работает механизм логического вывода">
+    <Position X="0.879" Y="0.5" Height="0.827" Width="1.7" />
+  </Comment>
+  <Comment CommentText="IKbForCgc - интерфейс базы знаний, с которым работает компонент приобретения знаний">
+    <Position X="8.526" Y="0.565" Height="0.827" Width="1.7" />
+  </Comment>
   <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;">
     <Position X="6.75" Y="4.25" Width="2" />
     <TypeIdentifier>
@@ -8,13 +26,12 @@
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterAdder&lt;T&gt;">
-    <Position X="4.75" Y="7.5" Width="2.25" />
+    <Position X="4.75" Y="7.75" Width="2.25" />
     <InheritanceLine Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="7.417" Y="6.449" />
-        <Point X="7.417" Y="7.125" />
-        <Point X="6.688" Y="7.125" />
-        <Point X="6.688" Y="7.5" />
+        <Point X="7.417" Y="8.188" />
+        <Point X="7" Y="8.188" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -23,31 +40,28 @@
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.KnowledgeBase.Rule">
-    <Position X="10.25" Y="4.25" Width="1.5" />
+    <Position X="10.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQ=</HashCode>
       <FileName>KnowledgeBase\Rule.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Action" />
-      <Property Name="Conditions" />
+      <Property Name="FactCheckings" />
     </ShowAsAssociation>
   </Class>
   <Class Name="IntellectualInformationalSystem.KnowledgeBase.Action">
-    <Position X="10" Y="6.25" Width="1.5" />
+    <Position X="10" Y="6.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>KnowledgeBase\Action.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_factToChange" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterFactory&lt;T&gt;">
-    <Position X="7.75" Y="3" Width="2.5" />
+  <Class Name="IntellectualInformationalSystem.HelpingClasses.ElementGetterAndGetterAdderFactory&lt;T&gt;">
+    <Position X="7.25" Y="1.75" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>HelpingClasses\ElementGetterFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>HelpingClasses\ElementGetterAndGetterAdderFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.KnowledgeBase.QuestionForFact">
@@ -70,11 +84,11 @@
       <Property Name="AllowedValues" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.AllowedValue">
-    <Position X="3.25" Y="4.75" Width="1.5" />
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.AllowedValue">
+    <Position X="2.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
-      <FileName>WorkingMemory\AllowedValue.cs</FileName>
+      <FileName>KnowledgeBase\AllowedValue.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IntellectualInformationalSystem.KnowledgeBase.ConcreteValueForFact">
@@ -84,23 +98,24 @@
       <FileName>KnowledgeBase\ConcreteValueForFact.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IntellectualInformationalSystem.WorkingMemory.Fact">
-    <Position X="13.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAIAAAA=</HashCode>
-      <FileName>WorkingMemory\Fact.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="IntellectualInformationalSystem.KnowledgeBase.KnowledgeBase">
-    <Position X="5" Y="2.25" Width="1.5" />
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.KB">
+    <Position X="4.75" Y="2" Width="2" />
+    <AssociationLine Name="RulesToGet" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetter&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="-0.307" />
+      </MemberNameLabel>
+    </AssociationLine>
     <AssociationLine Name="RulesToGetAdd" Type="IntellectualInformationalSystem.HelpingClasses.ElementGetterAdder&lt;T&gt;" FixedFromPoint="true">
       <Path>
-        <Point X="5.438" Y="2.912" />
-        <Point X="5.438" Y="7.5" />
+        <Point X="5.083" Y="3.94" />
+        <Point X="5.083" Y="7.75" />
       </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.28" Y="0.089" />
+      </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAQAAAAAAiAAAQ=</HashCode>
       <FileName>KnowledgeBase\KnowledgeBase.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -108,6 +123,27 @@
       <Property Name="RulesToGetAdd" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.CompositeCondition">
+    <Position X="13.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\CompositeCondition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.Condition">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\Condition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntellectualInformationalSystem.KnowledgeBase.FactChecking">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>KnowledgeBase\FactChecking.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Interface Name="IntellectualInformationalSystem.KnowledgeBase.Interfaces.IKbForLom">
     <Position X="3" Y="0.5" Width="1.5" />

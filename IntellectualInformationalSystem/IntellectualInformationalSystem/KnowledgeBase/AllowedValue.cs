@@ -4,17 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory
+namespace IntellectualInformationalSystem.KnowledgeBase
 {
     class AllowedValue
     {
+        public AllowedValue(int id, string text)
+        {
+            Id = id;
+            Text = text;
+        }
 
         public int Id
         {
             get;
         }
 
-        public int Text
+        public string Text
         {
             get;
         }

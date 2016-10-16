@@ -10,13 +10,18 @@ namespace IntellectualInformationalSystem.KnowledgeBase
 {
     class Rule
     {
+        public Rule(Action action, ElementGetter<FactChecking> factCheckings)
+        {
+            Action = action;
+            FactCheckings = factCheckings;
+        }
 
         public Action Action
         {
             get;
         }
 
-        public ElementGetter<Condition> Conditions
+        public ElementGetter<FactChecking> FactCheckings
         {
             get;
         }

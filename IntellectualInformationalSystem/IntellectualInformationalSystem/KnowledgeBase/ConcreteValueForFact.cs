@@ -10,7 +10,10 @@ namespace IntellectualInformationalSystem.KnowledgeBase
     class ConcreteValueForFact : Action
     {
 
-        public ConcreteValueForFact(Fact fact) : base(fact) { }
+        public ConcreteValueForFact(string factToChangeName, int value) : base(factToChangeName)
+        {
+            Value = value;
+        }
 
         public int Value
         {

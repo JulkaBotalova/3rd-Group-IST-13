@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace IntellectualInformationalSystem.WorkingMemory
 {
-    class Fact : Condition
+    class Fact
     {
         public Fact(string name)
         {
             Name = name;
-            AllowedValues = AllowedValuesFactory.CreateAllowedValuesFromFile(name);
         }
 
         public string Name
@@ -21,10 +20,5 @@ namespace IntellectualInformationalSystem.WorkingMemory
         }
 
         public int Value;
-
-        public ElementGetter<AllowedValue> AllowedValues
-        {
-            get;
-        }
     }
 }

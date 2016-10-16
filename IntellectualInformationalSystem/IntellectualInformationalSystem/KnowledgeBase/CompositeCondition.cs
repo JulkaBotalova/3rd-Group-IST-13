@@ -6,10 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntellectualInformationalSystem.WorkingMemory
+namespace IntellectualInformationalSystem.KnowledgeBase
 {
     class CompositeCondition : Condition
     {
+        public CompositeCondition(bool isNot) : base(isNot) { }
 
         public LogicalSign Sign
         {

@@ -1,4 +1,5 @@
-﻿using IntellectualInformationalSystem.WorkingMemory;
+﻿using IntellectualInformationalSystem.HelpingClasses;
+using IntellectualInformationalSystem.WorkingMemory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace IntellectualInformationalSystem.KnowledgeBase
 {
     class Action
     {
-        protected Fact _factToChange;
-        public Action(Fact fact)
+        protected string _factToChangeName;
+        public Action(string factToChangeName)
         {
-            _factToChange = fact;
-        } 
+            _factToChangeName = factToChangeName;
+        }
     }
 }
