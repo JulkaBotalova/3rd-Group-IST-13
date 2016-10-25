@@ -25,7 +25,6 @@ namespace IntellectualInformationalSystem
         public MainWindow()
         {
             InitializeComponent();
-            KB kb = new KB();
         }
     }
 }

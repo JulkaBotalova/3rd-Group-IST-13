@@ -12,10 +12,10 @@ namespace IntellectualInformationalSystem.WorkingMemory
     {
         public WM()
         {
-            Facts = new ElementGetterAdder<Rule>();
+            Facts = new ElementGetterAdder<Fact>();
         }
 
-        public ElementGetterAdder<Rule> Facts
+        public ElementGetterAdder<Fact> Facts
         {
             get;
         }

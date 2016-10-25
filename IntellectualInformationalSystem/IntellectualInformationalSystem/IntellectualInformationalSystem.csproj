@@ -55,8 +55,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="KnowledgeBase\FactChecking.cs" />
-    <Compile Include="KnowledgeBase\Interfaces%28не используется%29\IKbForCgc.cs" />
-    <Compile Include="KnowledgeBase\Interfaces%28не используется%29\IKbForLom.cs" />
+    <Compile Include="KnowledgeBase\Interfaces\IKbForCgc.cs" />
+    <Compile Include="KnowledgeBase\Interfaces\IKbForLom.cs" />
     <Compile Include="KnowledgeBase\KnowledgeBase.cs" />
     <Compile Include="LogicalOutputMechanism\IIterator.cs" />
     <Compile Include="LogicalOutputMechanism\RulesIterator.cs" />
@@ -66,8 +66,8 @@
     <Compile Include="WorkingMemory\Fact.cs" />
     <Compile Include="WorkingMemory\WorkingMemory.cs" />
     <Compile Include="HelpingClasses\ElementGetterAdder.cs" />
-    <Compile Include="WorkingMemory\Interfaces\IWmForGgc.cs" />
-    <Compile Include="WorkingMemory\Interfaces\IWmForLom.cs" />
+    <Compile Include="WorkingMemory\Interfaces%28не используется%29\IWmForGgc.cs" />
+    <Compile Include="WorkingMemory\Interfaces%28не используется%29\IWmForLom.cs" />
     <Compile Include="KnowledgeBase\Action.cs" />
     <Compile Include="KnowledgeBase\CompositeCondition.cs" />
     <Compile Include="KnowledgeBase\ConcreteValueForFact.cs" />

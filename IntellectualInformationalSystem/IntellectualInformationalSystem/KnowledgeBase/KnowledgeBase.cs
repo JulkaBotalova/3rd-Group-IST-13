@@ -22,7 +22,7 @@ namespace IntellectualInformationalSystem.KnowledgeBase
             RulesToGetAdd = ElementGetterAndGetterAdderFactory<Rule>.CreateElementGetterAdder(rules);
         }
 
-        //Инициациализация словаря с допустимы значениями из xml файла
+        //Инициациализация словаря с допустимыми значениями из xml файла
         private void setAllowedValuesForFactsFromFile()
         {
             _allowedValuesForFacts = new Dictionary<string, List<AllowedValue>>();
@@ -90,7 +90,7 @@ namespace IntellectualInformationalSystem.KnowledgeBase
 
                 if (actionType == "concreteValue")
                 {
-                    int value = Int32.Parse(valueElem.Element("concreteValue").Value);
+                    string value = valueElem.Element("concreteValue").Value;
                     action = new ConcreteValueForFact(fact,value);
                 }
 
