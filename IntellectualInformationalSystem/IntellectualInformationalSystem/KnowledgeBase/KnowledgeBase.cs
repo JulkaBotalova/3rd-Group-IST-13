@@ -26,7 +26,7 @@ namespace IntellectualInformationalSystem.KnowledgeBase
         private void setAllowedValuesForFactsFromFile()
         {
             _allowedValuesForFacts = new Dictionary<string, List<AllowedValue>>();
-            string filePath = "AllowedValuesForFacts.xml";
+            string filePath = "../../KnowledgeBaseFiles/AllowedValuesForFacts.xml";
             XDocument document = XDocument.Load(filePath);
             foreach (XElement el in document.Root.Elements())
             {
@@ -51,7 +51,7 @@ namespace IntellectualInformationalSystem.KnowledgeBase
         private List<Rule> getRulesFromFile()
         {
             List<Rule> rules = new List<Rule>();
-            string filePath = "KnowledgeBase.xml";
+            string filePath = "../../KnowledgeBaseFiles/KnowledgeBase.xml";
             XDocument document = XDocument.Load(filePath);
 
             foreach (XElement el in document.Root.Elements())

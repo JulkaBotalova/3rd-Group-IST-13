@@ -1,0 +1,76 @@
+<allowedValuesForFacts>
+	<allowedValuesSet>
+		<set>
+			<allowedValue id="1">до 1 млн.</allowedValue>
+			<allowedValue id="2">от 1 до 3 млн.</allowedValue>
+			<allowedValue id="3">больше 3 млн.</allowedValue>
+		</set>
+		<factsUsingThisSet>
+			<factName>price</factName>
+		</factsUsingThisSet>
+	</allowedValuesSet>
+	
+	<allowedValuesSet>
+		<set>
+			<allowedValue id="1">отечественный</allowedValue>
+			<allowedValue id="2">иномарка</allowedValue>
+		</set>
+		<factsUsingThisSet>
+			<factName>manufacturer</factName>
+		</factsUsingThisSet>
+	</allowedValuesSet>
+	
+	<allowedValuesSet>
+		<set>
+			<allowedValue id="1">да</allowedValue>
+			<allowedValue id="2">нет</allowedValue>
+		</set>
+		<factsUsingThisSet>
+			<factName>speed</factName>
+		</factsUsingThisSet>
+	</allowedValuesSet>
+	
+	<allowedValuesSet>
+		<set>
+			<allowedValue id="1">город</allowedValue>
+			<allowedValue id="2">внедерожье</allowedValue>
+			<allowedValue id="3">город и внедерожье</allowedValue>
+		</set>
+		<factsUsingThisSet>
+			<factName>landscape</factName>
+		</factsUsingThisSet>
+	</allowedValuesSet>
+	
+	<allowedValuesSet>
+		<set>
+			<allowedValue id="1">2</allowedValue>
+			<allowedValue id="2">5</allowedValue>
+			<allowedValue id="3">8</allowedValue>
+		</set>
+		<factsUsingThisSet>
+			<factName>seats</factName>
+		</factsUsingThisSet>
+	</allowedValuesSet>
+	
+	<allowedValuesSet>
+		<set>
+			<allowedValue id="1">город</allowedValue>
+			<allowedValue id="2">внедерожье</allowedValue>
+			<allowedValue id="3">50/50</allowedValue>
+		</set>
+		<factsUsingThisSet>
+			<factName>landscape-priority</factName>
+		</factsUsingThisSet>
+	</allowedValuesSet>
+	
+	<allowedValuesSet>
+		<set>
+			<allowedValue id="1">кабриолет</allowedValue>
+			<allowedValue id="2">купе</allowedValue>
+		</set>
+		<factsUsingThisSet>
+			<factName>carcase</factName>
+		</factsUsingThisSet>
+	</allowedValuesSet>
+	
+</allowedValuesForFacts>
